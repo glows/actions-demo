@@ -5,9 +5,9 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import "./App.css";
 // 引入加载路由视图得函数组件
-import RouterView from "./router/index.js";
+import RouterView from "./router/index";
 // 引入路由配置表
-import config from "./router/config.js";
+import config from "./router/config";
 
 export default class App extends Component {
   render() {
