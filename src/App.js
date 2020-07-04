@@ -1,42 +1,37 @@
- /* eslint-disable */
-import React from 'react';
+/* eslint-disable */
+import React, { Component } from "react";
 
-import { 
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+// 引入加载路由视图得函数组件
+import RouterView from "./router/index";
+// 引入路由配置表
+import config from "./router/config.js";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
-        {/* <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p> */}
-        {/* <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
-        <a>
-         <Link to="/about">About</Link> 
-        </a>
-        <a>
-         <Link to="/my-canvas">React-Canvas-demo</Link> 
-        </a>
-        
-      </header>
-    </div>
-  );
+export default class App extends Component {
+  render() {
+      return (
+          <div className='App'>
+              <Router>
+                  {/* 加载/展示路由视图组件 */}
+                  <RouterView routes={config}/>
+              </Router>
+          </div>
+      )
+  }
 }
 
-export default App;
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <Router>
+//         {/* 加载/展示路由视图组件 */}
+//         <RouterView routes={config} />
+//       </Router>
+//     </div>
+//   );
+// }
+
+// export default App;
