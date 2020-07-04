@@ -11,7 +11,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1"
   },
-  "homepage": "https://glows.github.io/actions-demo/",
+  "homepage": "https://glows.github.io/actions-demo",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
