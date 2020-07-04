@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route} from "react-router-dom";
 import App from '../App';
-import router from './router.js'
+// import router from './router.js'
 import Detail from '../pages/Detail';
 import About from '../components/About'
 import MyCanvas from '../pages/MyCanvas';
