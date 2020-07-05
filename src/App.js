@@ -13,7 +13,7 @@ export default class App extends Component {
   render() {
       return (
           <div className='App'>
-              <Router>
+              <Router basename="/actions-demo">
                   {/* 加载/展示路由视图组件 */}
                   <RouterView routes={config}/>
               </Router>
