@@ -1,7 +1,7 @@
-import About from '../components/About'
-import Inbox from '../components/Inbox';
-import Home from '../pages/Home';
-import MyCanvas from '../pages/MyCanvas'
+import About from './components/About'
+import Inbox from './components/Inbox';
+import Home from './pages/Home';
+import MyCanvas from './pages/MyCanvas'
 
 const routes = [
 
